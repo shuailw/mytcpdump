@@ -54,8 +54,9 @@
 
  2. 然后使用`tcpreplay`命令, 可以将pcap文件回放到某个网卡上
  例如, 回放test/arp.pcapng到`lo`环回网卡上, -M参数指定回放数据包的速率(Mbps), -l参数指定回放pcap文件的次数
+ ```
  tcpreplay -i lo -M 10 ./test/arp.pcapng`
- 
+ ```
  
  ![测试](https://github.com/shuailw/mytcpdump/blob/master/test/1.png)
  ## TODO
