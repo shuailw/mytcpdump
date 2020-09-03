@@ -5,21 +5,23 @@
  ### 1. 安装libpcap
  
  [下载libpcap](https://www.tcpdump.org/release/libpcap-1.9.1.tar.gz)
+ ```
  tar xzvf libpcap-xxx.tar.gz
  cd libpcap-xxx
  ./configure
  sudo make && make install
- 
+ ```
  ### 2. 安装libnet
  [下载libnet](https://github.com/libnet/libnet/releases)
+ ```
  tar xf libnet-x.y.z.tar.gz
  cd libnet-x.y.z/
  ./configure && make
  sudo make install
- 
+ ```
  ### 3. 编译Tcpdump
  
- make
+ `make`
  
  ## 使用
  
