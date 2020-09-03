@@ -22,7 +22,7 @@ void time2str(char *time_stamp, const struct timeval *t)
 {
     struct tm *ts;
     ts = localtime(&t->tv_sec);
-    strftime(time_stamp, 64, "%F %D",ts);
+    strftime(time_stamp, 64, "%F %X",ts);
 }
 
 long long int str2LL(char *str) 
