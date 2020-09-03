@@ -38,12 +38,14 @@
  ```
  使用例子
  1. 显示`lo`网卡数据包
- `./Tcpdump -i lo -v`
+ `./Tcpdump -i ens33 -v`
  2. 显示并将捕获的数据包写入到pcap文件
  `./Tcpdump -i lo -v -w 1.pcap`
  
  3. 不显示,仅仅将捕获的数据包写入到pcap文件
- `./Tcpdump -i lo -w  2.pcap`
+ `./Tcpdump -i ens33 -w  2.pcap`
+ 
+ ![在ens33网口上监听并将数据包显示到屏幕上](https://github.com/shuailw/mytcpdump/blob/master/test/2.png)
  
  ## 测试
  
